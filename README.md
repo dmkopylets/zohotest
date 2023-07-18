@@ -57,7 +57,7 @@ exit
 
 ********************************************************
 
-**to start the task10 program, use:**
+**to start this program use:**
 
 make dc-up
 

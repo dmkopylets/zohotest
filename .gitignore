@@ -1,5 +1,6 @@
 /.phpunit.cache
-/docker
+/docker/db/data
+/docker/logs/*.log
 /node_modules
 /public/build
 /public/hot

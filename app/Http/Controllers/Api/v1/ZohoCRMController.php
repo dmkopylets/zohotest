@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Zoho\CRM\Facades\ZohoClient;
+use App\Facades\ZohoClientFacade;
 
 class ZohoCRMController extends Controller
 {
@@ -20,7 +20,8 @@ class ZohoCRMController extends Controller
         ]);
 
         // Set up Zoho API Client
-        $zohoClient = ZohoClient::getInstance();
+        //$zohoClient = ZohoClientFacade::getInstance();
+        $zohoClient = app('ZohoClient');
         $moduleIns = $zohoClient->module('Deals');
 
         // Create Deal in Zoho CRM
